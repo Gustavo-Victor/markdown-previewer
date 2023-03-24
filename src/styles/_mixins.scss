@@ -1,0 +1,3 @@
+@mixin customBoxShadow($x: 1px, $y: 1px, $blur: 10px, $spread: 2px, $color: #3a5f5f) {
+    box-shadow: $x $y $blur $spread $color;
+  }

@@ -1,0 +1,195 @@
+@import "./functions";
+@import "./mixins";
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  background-color: $bg-color;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.toolbar {
+  width: 100%;
+  background-color: $toolbar-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: bold;
+  border: 1px solid $border-color;
+  @include customBoxShadow;
+
+  svg {
+    cursor: pointer;
+    width: 1rem;
+    stroke-width: 0.8;
+    transition: color 0.3s ease;
+    color: inherit;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+#editor-wrap {
+  width: 75%;
+  max-width: 600px;
+  margin: 1.125rem auto;
+  display: flex;
+  flex-direction: column;
+
+  #editor {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: $editor-color;
+    @include customBoxShadow;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    min-height: 200px;
+    overflow-y: scroll;
+  }
+}
+
+#preview-wrap {
+  width: 90%;
+  max-width: 800px;
+  margin: 1.125rem auto;
+  min-height: 200px;
+
+  #preview {
+    width: 100%;
+    padding: 1rem;
+    background-color: $preview-color;
+    color: inherit;
+    @include customBoxShadow;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 90%;
+      margin: 2rem auto;
+    }
+
+    pre {
+      background-color: $code-color;
+      padding: 5px;
+      line-height: 1.2;
+      overflow: auto;
+      margin: 0.5rem 0;
+    }
+
+    code {
+      padding: 3px;
+      background-color: $code-color;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    table {
+      max-width: 100%;
+      margin-top: 0.5rem;
+      border-spacing: 2px;
+      border-collapse: collapse;
+      overflow: scroll;
+
+      th,
+      td {
+        border: customBorder(medium, solid, gray);
+        color: $preview-text-color;
+      }
+    }
+
+    blockquote {
+      color: $preview-text-color;
+      border-left: customBorder(large);
+
+      p {
+        padding-left: 7px;
+        width: auto;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-bottom: 0.5rem;
+      color: $preview-text-color;
+    }
+
+    h1 {
+      font-size: 2rem;
+      border-bottom: customBorder(large);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: customBorder(medium);
+    }
+
+    h3 {
+      font-size: 1.17rem;
+      //@include customBorderBottom(small);
+    }
+
+    ol {
+      list-style-position: inside;
+      width: auto;
+    }
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      width: auto;
+    }
+
+    ul li {
+      display: list-item;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      margin-left: 3%;
+    }
+
+    ul ul ul {
+      list-style-type: square;
+      margin-left: 6%;
+    }
+  }
+}
+
+#editor-wrap.maximized,
+#preview-wrap.maximized {
+  width: 96%;
+  height: 90vh;
+}
+
+#editor-wrap.maximized #editor,
+#preview-wrap.maximized #preview {
+  width: 100%;
+  height: 100%;
+}
+
+#preview-wrap.maximized #preview {
+  overflow: auto;
+}
+
+#preview-wrap.maximized {
+  margin: 1rem auto 3rem;
+}

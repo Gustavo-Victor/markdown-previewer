@@ -1,0 +1,13 @@
+@function customBorder($size: small, $type: solid, $color: $preview-text-color) {
+    $borderSize: 1px; 
+    @if $size == small {
+      $borderSize: 1px;     
+    } 
+    @else if $size == medium {
+      $borderSize: 2px;
+    }
+    @else if $size == large {
+      $borderSize: 3px;
+    } 
+    @return $borderSize $type $color;  
+  }
