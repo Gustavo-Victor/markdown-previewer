@@ -14,11 +14,11 @@
 </p>
 
 <p align="center">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Gustavo-Victor/quote-machine?style=flat">
-    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gustavo-Victor/quote-machine?style=flat">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Gustavo-Victor/quote-machine?style=flat">
-    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Gustavo-Victor/quote-machine?style=flat">
-    <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/Gustavo-Victor/quote-machine?style=flat">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Gustavo-Victor/markdown-previewer?style=flat">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gustavo-Victor/markdown-previewer?style=flat">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Gustavo-Victor/markdown-previewer?style=flat">
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Gustavo-Victor/markdown-previewer">
+    <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/Gustavo-Victor/markdown-previewer">
 </p>
 
 <hr/>
