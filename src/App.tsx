@@ -40,7 +40,7 @@ function App() {
 
 
   ### Image
-  ![image name](./assets/react.svg)
+  <img src='./assets/images/a.jpg' alg='code' title='code'>
 
   `); 
 
