@@ -25,9 +25,9 @@
 
 ## ❓ Sobre
 
-Este projeto faz parte de mais um [desafio] da [freeCodeCamp] do curso de bibliotecas e frameworks Front-End. O projeto é uma aplicação React que permite editar conteúdo markdown tela e exibir o resultado em tempo real na tela. O intuito do projeto é treinar as habilidades aprendizas durante curso. 
+Este projeto faz parte de mais um [desafio](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer) da [freeCodeCamp](https://www.freecodecamp.org/) do curso de bibliotecas e frameworks Front-End. O projeto é uma aplicação React que permite editar conteúdo markdown tela e exibir o resultado em tempo real na tela. O intuito do projeto é treinar as habilidades aprendizas durante curso. 
 
-Clique [aqui](https://codepen.io/gustavo_victor/pen/qBMJopg?editors=0011) para ver o projeto no [CodePen](https://copen.io). 
+Clique [aqui](https://nhm2ib-5173.csb.app/) para ver o projeto no [CodeSandbox](https://codesandbox.io). 
 
 
 ## 🎨 Layout
